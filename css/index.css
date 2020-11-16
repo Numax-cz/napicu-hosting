@@ -5,13 +5,15 @@
     font-family: 'Roboto Mono', monospace;
     background-color: #44bd32;
 }
-
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track{ background: whitesmoke;}
+::-webkit-scrollbar-thumb{ background: #2ba119;} 
+::-webkit-scrollbar-thumb:hover{ background: #247a16;} 
 .bar{
     width: 100%;
     height: 200px;
     background-color: #2f3640;  
 }
-
 .navigaca{
     width: 100%;
     height: 40px;
@@ -26,7 +28,6 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
 .navigaca2{
     width: 48%;
     height: 50px;
@@ -44,11 +45,6 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
-
-
-
-
 .bar h1{
     position: absolute;
     color: whitesmoke;
@@ -65,19 +61,13 @@
 .popis{
     background-color: white;
     width: 50%;
-    min-height: 1050px;
+    min-height: 1850px;
     margin: auto;
 }
-
-
-
-
-
 .txt {
-
     background-color: #dcdde1;
     width: 48%;
-    min-height: 960px;
+    min-height: 1760px;
     right: 0;
     left: 0;
     margin-left: auto;
@@ -116,7 +106,6 @@
 .inf-popis1 li{
     background-color: #dcdde1;
 }
-
 .inf-popis2{
 
     width: 8%;
@@ -127,7 +116,8 @@
     margin-right: auto; 
     position: absolute;
     top: 570px; 
-
+    font-size: 20px;
+    font-weight: 900;
 }
 .inf-popis2 li{
     background-color: #dcdde1;
@@ -135,7 +125,6 @@
 .kkt p{
     background-color: #dcdde1;
 }
-
 .kkt{
 
     width: 50%;
@@ -146,6 +135,7 @@
     margin-right: auto;
     position: absolute;
     top: 570px;
+    font-size: 20px;
 }
 .img{
     width: 50%;
@@ -182,8 +172,224 @@
     border-radius: 10px;
     transition: .4s;
 }
+.proc{
+    height: 100px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: absolute;
+    background-color: #dcdde1;
+    color: red;
+    font-size: 25px;
+    top: 800px;
+}
+.podpora{
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    font-size: 30px;
+    left:  0;
+    right: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+    background-color: #dcdde1;
+}
+.proc-pop{
+    width: 70%;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 1000px;
+    font-size: 25px;
+    text-align: left;
+}
+.server{
+    height: 100px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: absolute;
+    background-color: #dcdde1;
+    color: black;
+    font-size: 25px;
+    top: 1200px;
+}
+.server-pop{
+    width: 70%;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 1300px;
+    font-size: 25px;
+    text-align: left;
+}
+.server-pop a{
+    text-decoration: none;
+    color: #369727;
+    font-weight: bold;
+}
+.podpora-zakop{
+    height: 100px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: absolute;
+    background-color: #dcdde1;
+    color: black;
+    font-size: 25px;
+    top: 1400px;
+}
+.podpora-pop{
+    width: 70%;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 1500px;
+    font-size: 25px;
+    text-align: left;
 
+}
+.img,
+.podpora-pop li,
+.server-pop a,
+.server-pop li,
+.podpora-zakop-nz h2,
+.server h2,
+.proc-pop li,
+.podpora h2,
+.proc h1{
+    background-color: #dcdde1;
+}
 .kopit h1:hover{
     transition: .2s;
     background-color: #369727;
+}
+
+
+
+
+@media screen and (max-width:1750px){
+    .img img{
+        width: 300px;
+        height: 250px;
+    }
+    .img{
+        right: -50px;
+    }
+    .proc{
+        font-size: 20px;
+    }
+    .inf-popis1 ul{
+        position: absolute;
+        top: -28px;
+    }
+
+}
+
+@media screen and (max-width:1567px){
+    .inf-popis1 ul{
+        font-size: 15px;
+        right: 20px;
+    }
+}
+@media screen and (max-width:1480px){
+    .inf-popis1 ul{
+        right: 60px;
+    }
+    .img{
+        right: -70px;
+    }
+}
+@media screen and (max-width:1480px){
+    .inf-popis1 ul{
+        right: 70px;
+    }
+    .inf-popis1{
+        width: 52%;
+    }
+    .img{
+        right: -90px;
+    }
+}
+@media screen and (max-width:1370px){
+    .inf-popis1 ul{
+        right: 90px;
+        top: -40px;
+    }
+    .inf-popis2{
+        left: -200px;
+        font-size: 20px;
+    }
+    .img{
+        right: -120px;
+    }
+    .kkt{
+        font-size: 20px;
+        width: 65%;
+        position: absolute;
+        left: 200px;
+    }
+    .kopit h1{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 1275px) {
+    .inf-popis1 ul{
+        right: 130px;
+        top: -50px;
+    }
+    .kkt{
+        left: 140px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .img{
+        right: -130px;
+    }
+    .inf-popis1 ul{
+        font-size: 13px;
+        right: 160px;
+        top: -70px;
+    }
+    .proc{
+        font-size: 16px;
+    }
+    .proc h2{
+        font-size: 30px;
+    }
+    .proc-pop{
+        font-size: 18px;
+    }
+
+
+    .server h2{
+        font-size: 30px;
+    }
+    .server-pop{
+        font-size: 18px;
+    }
+
+
+    .podpora-zakop h2{
+        font-size: 30px;
+    }
+    .podpora-pop{
+        font-size: 18px ;
+    }
 }
